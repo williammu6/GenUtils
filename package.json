@@ -1,15 +1,27 @@
 {
   "name": "genchain",
-  "version": "0.0.1-dev",
+  "version": "0.0.2-dev",
   "description": "A Typescript utility library focused on improving code readability when using generators/iterators",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index",
+  "files": ["dist"],
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "echo building && npm run build",
+    "publish": "npm publish --access public"
   },
-  "keywords": [],
+  "keywords": ["generators", "chain", "typescript", "javascript"],
   "author": "William Murari",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williammu6/genutils"
+  },
+  "bugs": {
+    "url": "https://github.com/williammu6/genutils/issues"
+  },
+  "homepage": "https://github.com/williammu6/genutils#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.24.4",
     "@jest/globals": "^29.7.0",
