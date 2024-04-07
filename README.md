@@ -1,13 +1,13 @@
-# GenUtils
+# genchain
 
-GenUtils is a library that provides utility functions for chaining generators.
+genchain is a library that provides utility functions for chaining generators.
 
 ## Installation
 
 You can install MyPackage via npm:
 
 ```sh
-npm install GenUtils
+npm install genchain
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ A generator yielding the output of the last generator in the chain.
 #### Example
 
 ```ts
-import { chain } from 'GenUtils';
+import { chain } from 'genchain';
 
 function* generator1() {
   yield 1;
@@ -59,7 +59,7 @@ A generator yielding the output of the last generator in the chain.
 #### Example
 
 ```ts
-import { chainAsync } from 'GenUtils';
+import { chainAsync } from 'genchain';
 
 async function* asyncGenerator1() {
   yield await Promise.resolve(1);
