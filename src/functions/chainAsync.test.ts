@@ -5,14 +5,14 @@ async function* g1() {
   yield Promise.resolve('b');
 }
 
-async function* g2(inputFromG1: string) {
-  yield Promise.resolve(inputFromG1 + 'x');
-  yield Promise.resolve(inputFromG1 + 'y');
+async function* g2(arg: string) {
+  yield Promise.resolve(arg + 'x');
+  yield Promise.resolve(arg + 'y');
 }
 
-async function* g3(inputFromG2: string) {
-  yield new Promise(resolve => setTimeout(resolve, 50, inputFromG2 + '1'));
-  yield new Promise(resolve => setTimeout(resolve, 100, inputFromG2 + '1'));
+async function* g3(arg: string) {
+  yield new Promise(resolve => setTimeout(resolve, 50, arg + '1'));
+  yield new Promise(resolve => setTimeout(resolve, 100, arg + '2'));
 }
 
 describe('chain', () => {

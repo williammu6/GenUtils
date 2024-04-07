@@ -5,14 +5,14 @@ function* g1() {
   yield 'b';
 }
 
-function* g2(inputFromG1: string) {
-  yield inputFromG1 + 'x';
-  yield inputFromG1 + 'y';
+function* g2(arg: string) {
+  yield arg + 'x';
+  yield arg + 'y';
 }
 
-function* g3(inputFromG2: string) {
-  yield inputFromG2 + '1';
-  yield inputFromG2 + '2';
+function* g3(arg: string) {
+  yield arg + '1';
+  yield arg + '2';
 }
 
 describe('chain', () => {
