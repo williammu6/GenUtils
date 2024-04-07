@@ -1,13 +1,13 @@
 {
-  "name": "generator-fp-flow",
+  "name": "GenUtils",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Typescript utility library focused on improving code readability when using generators/iterators",
   "main": "src/index.ts",
   "scripts": {
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "William Murari",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.24.4",
