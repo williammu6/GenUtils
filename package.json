@@ -1,7 +1,7 @@
 {
   "name": "genchain",
   "version": "0.0.1-dev",
-  "description": "A Typescript utility library focused on improving code readability when using generators/iterators",
+  "description": "A Typescript utility library that let's you chain generators",
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
