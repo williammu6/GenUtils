@@ -1,10 +1,11 @@
 {
   "name": "GenUtils",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A Typescript utility library focused on improving code readability when using generators/iterators",
   "main": "src/index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "William Murari",
