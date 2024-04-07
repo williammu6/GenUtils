@@ -26,8 +26,8 @@ A generator yielding the output of the last generator in the chain.
 
 #### Example
 
-```javascript
-const { chain } = require('my-package');
+```ts
+import { chain } from 'GenUtils';
 
 function* generator1() {
   yield 1;
@@ -58,8 +58,8 @@ A generator yielding the output of the last generator in the chain.
 
 #### Example
 
-```javascript
-const { chainAsync } = require('my-package');
+```ts
+import { chainAsync } from 'GenUtils';
 
 async function* asyncGenerator1() {
   yield await Promise.resolve(1);
