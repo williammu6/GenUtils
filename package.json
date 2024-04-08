@@ -2,16 +2,23 @@
   "name": "genchain",
   "version": "0.0.3-dev",
   "main": "dist/index.js",
-  "types": "dist/index",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "description": "A Typescript utility library that let's you chain generators",
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "prepublish": "echo building && npm run build",
+    "prepublish": "npm run build",
     "publish": "npm publish --access public"
   },
-  "keywords": ["generators", "chain", "typescript", "javascript"],
+  "keywords": [
+    "generators",
+    "chain",
+    "typescript",
+    "javascript"
+  ],
   "author": "William Murari",
   "license": "MIT",
   "repository": {
@@ -29,6 +36,7 @@
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "prettier": "3.2.5",
+    "rollup": "^4.14.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2"
   },

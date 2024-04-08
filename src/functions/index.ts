@@ -1,2 +1,2 @@
-export * from './chain';
-export * from './chainAsync';
+export { chain } from './chain';
+export { chainAsync } from './chainAsync';
