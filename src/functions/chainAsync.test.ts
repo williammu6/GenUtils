@@ -11,8 +11,8 @@ async function* g2(arg: string) {
 }
 
 async function* g3(arg: string) {
-  yield new Promise(resolve => setTimeout(resolve, 50, arg + '1'));
-  yield new Promise(resolve => setTimeout(resolve, 100, arg + '2'));
+  yield Promise.resolve(arg + '1');
+  yield Promise.resolve(arg + '2');
 }
 
 describe('chain', () => {

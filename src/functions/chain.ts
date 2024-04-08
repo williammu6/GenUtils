@@ -4,8 +4,8 @@ export function chain<T extends any[]>(
   gens: [...TupleOfGeneratorChains<T>],
 ): Generator<LastGeneratorYieldType<T>>;
 
-export function* chain(gens: ((...args: any) => Generator<any>)[]) {
-  function* processChain(index: number, input: any): any {
+export function chain(gens: ((...args: any) => Generator<any>)[]) {
+  function* processChain(index: number, input?: any): any {
     if (index == gens.length) {
       yield input;
       return;
@@ -17,8 +17,5 @@ export function* chain(gens: ((...args: any) => Generator<any>)[]) {
     }
   }
 
-  const initialGenerator = gens[0]();
-  for (const initialValue of initialGenerator) {
-    yield* processChain(1, initialValue);
-  }
+  return processChain(0);
 }
