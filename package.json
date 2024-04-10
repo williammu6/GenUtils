@@ -11,8 +11,7 @@
     "test": "jest",
     "build": "rm -fr dist && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "publish": "npm publish --access public"
+    "build:esm": "tsc -p tsconfig.esm.json"
   },
   "exports": {
     "require": "./dist/cjs/index.js",
@@ -28,12 +27,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/williammu6/genutils"
+    "url": "git+https://github.com/williammu6/genchain"
   },
   "bugs": {
-    "url": "https://github.com/williammu6/genutils/issues"
+    "url": "https://github.com/williammu6/genchain/issues"
   },
-  "homepage": "https://github.com/williammu6/genutils#readme",
+  "homepage": "https://github.com/williammu6/genchain#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.24.4",
     "@jest/globals": "^29.7.0",
